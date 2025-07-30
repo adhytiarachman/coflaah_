@@ -1,0 +1,29 @@
+------ Website Penjualan Kopi Coflaah -------
+
+- Auth -
+
+1. Admin
+-> Username	: admin@gmail.com
+-> Password	: admin123
+
+2. User
+-> Username	: alex@gmail.com
+-> Password	: alex123
+
+	OR
+-> Google Login
+
+
+- API -
+	-> Midtrans	-> /midtrans/webhook
+	-> Google Oauth	-> /auth/google/callback
+
+- Framework -
+	-> Laravel + Inertia + Vue
+
+- Depedency -
+	-> Gsap
+	-> Tailwindcss
+	-> Ziggy
+	-> AOS
+	-> Bootstrap

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+@layer base {
+    :root {
+        /* 🎨 Coffee Color Palette */
+        --color-coffee: #3e2c1c;
+        --color-chocolate: #1f120a;
+        --color-latte: #c8b29c;
+        --color-cream: #f4eee6;
+        --color-cream-light: #f9f5f0;
+        --color-gold: #d9a05b;
+
+        /* 🔤 Font */
+        --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    }
+}
+/* Transisi Halaman */
+#transition-wrapper {
+    animation: fadeIn 0.5s ease;
+}
+/* global.css atau app.css */
+.input {
+    @apply border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
